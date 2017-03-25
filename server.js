@@ -13,6 +13,12 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/Article-two', function (req,res){
+    res.send('Article two request and comming to exicution');
+});
+app.get('/Article-three', function (req,res){
+    res.send('Article three request and comming to exicution');
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
